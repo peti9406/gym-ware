@@ -2,30 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\FilteringService;
-use App\Services\ExerciseDBService;
+use App\Facades\ExerciseDBSvc;
+use App\Facades\FilteringSvc;
 use Illuminate\Http\Request;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Cache;
 
 class ExerciseDBController extends Controller
 {
-    protected $exerciseService;
-    protected $filteringService;
-
-    public function __construct(ExerciseDBService $exerciseService, FilteringService $filteringService) {
-        $this->exerciseService = $exerciseService;
-        $this->filteringService = $filteringService;
-    }
-
-    public function index(Request $request) {
+    public function index(Request $request)
+    {
         try {
             $page = $request->query("page", 1);
             $bodypart = $request->query("bodypart");
             $equipment = $request->query("equipment");
 
-            $bodyparts = $this->filteringService->getAllBodyParts()["data"];
-            $equipments = $this->filteringService->getAllEquipments()["data"];
+            $bodyparts = FilteringSvc::getAllBodyParts()['data'];
+            $equipments = FilteringSvc::getAllEquipments()['data'];
 
             usort($bodyparts, fn($a, $b) => strcmp($a["name"], $b["name"]));
             usort($equipments, fn($a, $b) => strcmp($a["name"], $b["name"]));
@@ -35,7 +27,7 @@ class ExerciseDBController extends Controller
                 "equipment" => $equipment,
             ];
 
-            $exercises = $this->exerciseService->getByFilters($filters, $page);
+            $exercises = ExerciseDBSvc::getByFilters($filters, $page);
 
             return view("catalog", [
                 "exercises" => $exercises,
@@ -54,7 +46,8 @@ class ExerciseDBController extends Controller
         }
     }
 
-    public function show($id, Request $request) {
+    public function show($id, Request $request)
+    {
 
         $page = $request->query("page", 1);
         $bodypart = $request->query("bodypart");

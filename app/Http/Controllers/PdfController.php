@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\ExerciseDBService;
-use App\Services\WorkoutPlanService;
+use App\Facades\ExerciseDBSvc;
+use App\Facades\WorkoutPlanSvc;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -12,14 +12,6 @@ use Illuminate\Support\Str;
 
 class PdfController extends Controller
 {
-    private WorkoutPlanService $workoutPlanService;
-    private ExerciseDBService $exerciseDBService;
-
-    public function __construct(WorkoutPlanService $workoutPlanService, ExerciseDBService $exerciseDBService) {
-        $this->workoutPlanService = $workoutPlanService;
-        $this->exerciseDBService = $exerciseDBService;
-    }
-
     public function downloadChart(Request $request)
     {
         $subscribed = Auth::user()->subscription;
@@ -60,13 +52,13 @@ class PdfController extends Controller
                 ->with('error', 'You have to be subscribed to download the workout template!');
         }
 
-        $plan = $this->workoutPlanService->getWorkoutPlanById($id);
+        $plan = WorkoutPlanSvc::getWorkoutPlanById($id);
 
         if (empty($plan['exercises'])) {
             return redirect('/workout-planner/edit/' . $id);
         }
 
-        $plan = $this->exerciseDBService->getExercisesForPlan($plan);
+        $plan = ExerciseDBSvc::getExercisesForPlan($plan);
         $pdf = Pdf::loadView('workout.create-pdf', [
             'plan' => $plan,
         ])->setPaper('a4');

@@ -109,7 +109,7 @@ class ProfileController extends Controller
 
         $user->save();
 
-        // 🧠 If this user is a coach, update or create the coach bio
+        // If this user is a coach, update or create the coach bio
         if ($user->is_coach) {
             Coach::updateOrCreate(
                 ['user_id' => $user->id],

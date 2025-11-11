@@ -20,15 +20,13 @@ class ChartService
         $yMax = ceil($this->getYMax($exerciseMaxWeights) / $this->MAX_CHART_STEP) * $this->MAX_CHART_STEP + $this->MAX_CHART_STEP;
         $options = $this->getOptions($yMax, $this->MAX_CHART_STEP);
 
-        $chart = Chartjs::build()
+        return Chartjs::build()
             ->name("WorkoutProgressionChart")
             ->type("line")
             ->size(["width" => 400, "height" => 200])
             ->labels($labels)
             ->datasets($datasets)
             ->options($options);
-
-        return $chart;
     }
 
     private function getMaxWeights(array $workouts): array
@@ -139,15 +137,13 @@ class ChartService
         $yMax = ceil(max($totalWeights) / $this->TOTAL_CHART_STEP) * $this->TOTAL_CHART_STEP + $this->TOTAL_CHART_STEP;
         $options = $this->getOptions($yMax, $this->TOTAL_CHART_STEP);
 
-        $chart = Chartjs::build()
+        return Chartjs::build()
             ->name("WorkoutProgressionChart")
             ->type("bar")
             ->size(["width" => 400, "height" => 200])
             ->labels($labels)
             ->datasets($datasets)
             ->options($options);
-
-        return $chart;
     }
 
     private function getDataForTotalWeights(array $totalWeights): array

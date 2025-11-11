@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Exercise;
-use App\Models\WorkoutPlan;
-use App\Services\ExerciseDBService;
-use App\Services\ExerciseService;
-use App\Services\FilteringService;
-use App\Services\WorkoutPlanService;
-use Illuminate\Contracts\View\Factory;
+use App\Facades\ExerciseDBSvc;
+use App\Facades\ExerciseSvc;
+use App\Facades\FilteringSvc;
+use App\Facades\WorkoutPlanSvc;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -16,19 +13,6 @@ use Illuminate\Routing\Redirector;
 
 class ExerciseController extends Controller
 {
-    protected WorkoutPlanService $workoutPlanService;
-    protected ExerciseService $exerciseService;
-    protected FilteringService $filteringService;
-    protected ExerciseDBService $exerciseDBService;
-
-    public function __construct(WorkoutPlanService $workoutPlanService, ExerciseService $exerciseService, FilteringService $filteringService, ExerciseDBService $exerciseDBService)
-    {
-        $this->workoutPlanService = $workoutPlanService;
-        $this->exerciseService = $exerciseService;
-        $this->filteringService = $filteringService;
-        $this->exerciseDBService = $exerciseDBService;
-    }
-
     public function create(Request $request, int $planId): View
     {
         try {
@@ -36,8 +20,8 @@ class ExerciseController extends Controller
             $bodypart = $request->query("bodypart");
             $equipment = $request->query("equipment");
 
-            $bodyparts = $this->filteringService->getAllBodyParts()["data"];
-            $equipments = $this->filteringService->getAllEquipments()["data"];
+            $bodyparts = FilteringSvc::getAllBodyParts()['data'];
+            $equipments = FilteringSvc::getAllEquipments()['data'];
 
             usort($bodyparts, fn($a, $b) => strcmp($a["name"], $b["name"]));
             usort($equipments, fn($a, $b) => strcmp($a["name"], $b["name"]));
@@ -47,8 +31,8 @@ class ExerciseController extends Controller
                 "equipment" => $equipment,
             ];
 
-            $exercises = $this->exerciseDBService->getByFilters($filters, $page);
-            $plan = $this->workoutPlanService->getWorkoutPlanById($planId);
+            $exercises = ExerciseDBSvc::getByFilters($filters, $page);
+            $plan = WorkoutPlanSvc::getWorkoutPlanById($planId);
 
             return view("exercise.create", [
                 'plan' => $plan,
@@ -83,17 +67,18 @@ class ExerciseController extends Controller
             return redirect('/workout-planner/exercise/create/'.$planId)->with('error', 'Something went wrong');
         }
 
-        $this->exerciseService->createExercise([
+        ExerciseSvc::createExercise([
             'workout_plan_id' => $planId,
             'api_exercise_id' => $apiId,
             'sets' => $sets,
         ]);
+
         return redirect("/workout-planner/edit/{$planId}");
     }
 
     public function destroy(Request $request, $exerciseId): RedirectResponse
     {
-        $this->exerciseService->deleteExercise($exerciseId);
+        ExerciseSvc::deleteExercise($exerciseId);
         $planId = $request->input('plan-id');
         return redirect("/workout-planner/edit/{$planId}");
     }
