@@ -1,10 +1,12 @@
 <!-- README TOP -->
 <div id="readme-top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<div align="center">
+    [![Contributors][contributors-shield]][contributors-url]
+    [![Stargazers][stars-shield]][stars-url]
+    [![Issues][issues-shield]][issues-url]
+    [![LinkedIn][linkedin-shield]][linkedin-url]
+</div>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -56,7 +58,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
+![Product Name Screen Shot][product-screenshot]
 
 GymWare is a comprehensive, all-in-one platform designed to help users improve their health, stay motivated, and reach their fitness goals. It combines exercise planning, progress tracking, and trainer support in a single, easy-to-use application.
 The app aims to simplify the user’s fitness journey — from finding the right exercises and tracking workouts to connecting with personal trainers or nearby gyms.
