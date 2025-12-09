@@ -1,12 +1,10 @@
 <!-- README TOP -->
 <div id="readme-top"></div>
 
-<div align="center">
-    [![Contributors][contributors-shield]][contributors-url]
-    [![Stargazers][stars-shield]][stars-url]
-    [![Issues][issues-shield]][issues-url]
-    [![LinkedIn][linkedin-shield]][linkedin-url]
-</div>
+[![Contributors][contributors-shield]][contributors-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
