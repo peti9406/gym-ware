@@ -199,12 +199,12 @@ Project Link: (https://github.com/peti9406/gym-ware)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/peti9406/gym-ware.svg?style=for-the-badge
 [contributors-url]: https://github.com/peti9406/gym-ware/graphs/contributors
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/peti9406/gym-ware.svg?style=for-the-badge
 [stars-url]: https://github.com/peti9406/gym-ware/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[issues-shield]: https://img.shields.io/github/issues/peti9406/gym-ware.svg?style=for-the-badge
+[issues-url]: https://github.com/peti9406/gym-ware/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/p%C3%A9ter-t%C3%B6r%C3%B6k-95372315a/
 [product-screenshot]: public/images/planner-bg.jpg
