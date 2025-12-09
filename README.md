@@ -191,7 +191,7 @@ Under work!
 * Ákos Ilia
 * Péter Török - p.torok0694@gmail.com
 
-Project Link: (https://github.com/peti9406/gym-ware)
+Project Link: https://github.com/peti9406/gym-ware
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
