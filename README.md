@@ -1,8 +1,10 @@
 <!-- README TOP -->
 <div id="readme-top"></div>
 
-
-
+[![Contributors][contributors-shield]][contributors-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -16,12 +18,12 @@
   <p align="center">
     An awesome all around fitness application.
     <br />
-    <a href="https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/peti9406/gym-ware"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406/issues/new?labels=bug">Report Bug</a>
+    <a href="https://github.com/peti9406/gym-ware/issues/new?labels=bug">Report Bug</a>
     &middot;
-    <a href="https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406/issues/new?labels=enhancement">Request Feature</a>
+    <a href="https://github.com/peti9406/gym-ware/issues/new?labels=bug/issues/new?labels=enhancement">Request Feature</a>
   </p>
 </div>
 
@@ -54,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]
 
 GymWare is a comprehensive, all-in-one platform designed to help users improve their health, stay motivated, and reach their fitness goals. It combines exercise planning, progress tracking, and trainer support in a single, easy-to-use application.
 The app aims to simplify the user’s fitness journey — from finding the right exercises and tracking workouts to connecting with personal trainers or nearby gyms.
@@ -184,12 +186,12 @@ Under work!
 <!-- CONTACT -->
 ## Contact
 
-* Bernadett Kiss - email@email_client.com
-* Botond Brindza - email@email_client.com
-* Ákos Ilia - email@email_client.com
+* Bernadett Kiss
+* Botond Brindza
+* Ákos Ilia
 * Péter Török - p.torok0694@gmail.com
 
-Project Link: [https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406](https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406)
+Project Link: (https://github.com/peti9406/gym-ware)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,17 +200,13 @@ Project Link: [https://github.com/CodecoolGlobal/el-proyecte-grande-production-g
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406/forks
+[contributors-url]: https://github.com/peti9406/gym-ware/graphs/contributors
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406/stargazers
+[stars-url]: https://github.com/peti9406/gym-ware/stargazers
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
 [issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://www.linkedin.com/in/p%C3%A9ter-t%C3%B6r%C3%B6k-95372315a/
 [product-screenshot]: public/images/planner-bg.jpg
 <!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
