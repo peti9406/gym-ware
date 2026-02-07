@@ -16,12 +16,9 @@
   <p align="center">
     An awesome all around fitness application.
     <br />
-    <a href="https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406/issues/new?labels=bug">Report Bug</a>
+    <a href="https://github.com/peti9406/gym-ware.git/issues/new?labels=bug">Report Bug</a>
     &middot;
-    <a href="https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406/issues/new?labels=enhancement">Request Feature</a>
+    <a href="https://github.com/peti9406/gym-ware.git/issues/new?labels=enhancement">Request Feature</a>
   </p>
 </div>
 
@@ -44,7 +41,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -68,8 +65,6 @@ Core Features:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
 * [![Laravel][Laravel.com]][Laravel-url]
@@ -78,8 +73,6 @@ Core Features:
 * [![Tailwind][Tailwind.com]][Tailwind-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -104,8 +97,8 @@ Or if you want it to run with docker:
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406.git
-   cd el-proyecte-grande-production-general-peti9406
+   git clone https://github.com/peti9406/gym-ware.git
+   cd gym-ware
    ```
 2. Create the environment file
     ```sh
@@ -142,8 +135,8 @@ Or if you want it to run with docker:
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406.git
-   cd el-proyecte-grande-production-general-peti9406
+   git clone https://github.com/peti9406/gym-ware.git
+   cd gym-ware
    ```
 2. Create the environment file
     ```sh
@@ -171,15 +164,22 @@ Or if you want it to run with docker:
    
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Screenshots -->
+### Screenshots
 
+#### Dashboard
+![dashboard](./screenshots/dashboard.png)
 
-<!-- USAGE EXAMPLES -->
-## Usage
+#### Manage Workout Templates
+![manage](./screenshots/manage.png)
 
-Under work!
+#### Progression Chart
+![chart](./screenshots/chart.png)
+
+#### Workout History
+![history](./screenshots/history.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
@@ -189,7 +189,7 @@ Under work!
 * Ákos Ilia - email@email_client.com
 * Péter Török - p.torok0694@gmail.com
 
-Project Link: [https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406](https://github.com/CodecoolGlobal/el-proyecte-grande-production-general-peti9406)
+Project Link: [https://github.com/peti9406/gym-ware](https://github.com/peti9406/gym-ware)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
